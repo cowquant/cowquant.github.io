@@ -45,6 +45,9 @@ body {
 	-moz-osx-font-smoothing: grayscale
 }
 
+body.home {
+	background-color: #f7f7f7!important
+}
 
 
 blockquote,dl,ol,p,pre,table,ul {
@@ -137,8 +140,46 @@ pre {
 	margin: 20px 0
 }
 
+code {
+	font-family: Menlo,Bitstream Vera Sans Mono,DejaVu Sans Mono,Monaco,Consolas,monospace;
+	font-size: 13px;
+	margin: 0 3px;
+	padding: 2px 6px;
+	border-radius: 3px;
+	background-color: #f7f7f7
+}
 
+pre code {
+	font-size: 13px;
+	display: block;
+	overflow: auto;
+	padding: 1.3em;
+	border: 0
+}
 
+blockquote {
+	padding: 0 10px 0 20px;
+	border-left: 4px solid #ddd
+}
+
+blockquote>:first-child {
+	margin-top: 0
+}
+
+blockquote>:last-child {
+	margin-bottom: 0
+}
+
+hr {
+	clear: both;
+	overflow: hidden;
+	height: 0;
+	margin: 15px 0;
+	padding: 0;
+	border: 0;
+	border-bottom: 2px solid #ddd;
+	background: 0 0
+}
 
 table {
 	font-size: 13px;
@@ -172,6 +213,33 @@ table tr:hover {
 
 table thead tr {
 	background-color: #f7f7f7
+}
+
+button,input,select,textarea {
+	font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+	font-size: 13px;
+	line-height: 1.6;
+	resize: none
+}
+
+input:focus:invalid,input:required:invalid,textarea:focus:invalid,textarea:required:invalid {
+	box-shadow: none
+}
+
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+	color: #5f5f5f
+}
+
+input:-moz-placeholder,textarea:-moz-placeholder {
+	color: #5f5f5f
+}
+
+input::-moz-placeholder,textarea::-moz-placeholder {
+	color: #5f5f5f
+}
+
+input:-ms-input-placeholder,textarea:-ms-input-placeholder {
+	color: #5f5f5f
 }
 
 .clearfix:after,.clearfix:before {
@@ -218,6 +286,34 @@ table thead tr {
 	background-color: #fff!important
 }
 
+.bg-deepgrey {
+	background-color: rgba(0,0,0,.5)!important
+}
+
+.bg-blue {
+	background-color: #6fa3ef!important
+}
+
+.bg-purple {
+	background-color: #bc99c4!important
+}
+
+.bg-green {
+	background-color: #46c47c!important
+}
+
+.bg-yellow {
+	background-color: #f9bb3c!important
+}
+
+.bg-red {
+	background-color: #e8583d!important
+}
+
+.bg-orange {
+	background-color: #f68e5f!important
+}
+
 .text-white {
 	color: #fff!important
 }
@@ -225,6 +321,129 @@ table thead tr {
 .MathJax_Display {
 	overflow-x: auto;
 	overflow-y: hidden
+}
+
+.MathJax {
+	outline: 0
+}
+
+.MathJax span {
+	font-size: 15px
+}
+
+#instantclick-bar {
+	background-color: #eb5055
+}
+
+.icon-search {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	margin: 2px 0 0 3px;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	color: #313131;
+	border: solid 2px currentColor;
+	border-radius: 50%
+}
+
+.icon-search:before {
+	position: absolute;
+	top: 11px;
+	left: 3px;
+	width: 2px;
+	height: 4px;
+	content: '';
+	background-color: currentColor
+}
+
+.icon-menu {
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	height: 12px;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	-webkit-transition-timing-function: cubic-bezier(.61,.04,.17,1.32);
+	transition-timing-function: cubic-bezier(.61,.04,.17,1.32)
+}
+
+.icon-menu .middle {
+	position: absolute;
+	top: 50%;
+	left: -.25em;
+	display: inline-block;
+	width: 20px;
+	height: 2px;
+	margin-top: -1px;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	background: #313131
+}
+
+.icon-menu:after,.icon-menu:before {
+	position: absolute;
+	left: -.25em;
+	width: 20px;
+	height: 2px;
+	content: '';
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	-webkit-transform-origin: 50% 50% 0;
+	-ms-transform-origin: 50% 50% 0;
+	transform-origin: 50% 50% 0;
+	background: #313131
+}
+
+.icon-menu:after {
+	bottom: 0
+}
+
+.icon-menu:before {
+	top: 0
+}
+
+.bg-ico-book {
+	background-position: 0 0!important
+}
+
+.bg-ico-game {
+	background-position: 0 -40px!important
+}
+
+.bg-ico-note {
+	background-position: 0 -80px!important
+}
+
+.bg-ico-chat {
+	background-position: 0 -120px!important
+}
+
+.bg-ico-code {
+	background-position: 0 -160px!important
+}
+
+.bg-ico-image {
+	background-position: 0 -200px!important
+}
+
+.bg-ico-web {
+	background-position: 0 -240px!important
+}
+
+.bg-ico-link {
+	background-position: 0 -280px!important
+}
+
+.bg-ico-design {
+	background-position: 0 -320px!important
+}
+
+.bg-ico-lock {
+	background-position: 0 -360px!important
 }
 
 .header {
