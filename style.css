@@ -447,13 +447,13 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {
 }
 
 .header {
-	line-height: 68px;
+	line-height: 48px;
 	position: fixed;
 	z-index: 10;
 	top: 0;
 	display: block;
 	width: 100%;
-	height: 70px;
+	height: 50px;
 	padding: 0;
 	text-align: right;
 	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,.1);
@@ -482,7 +482,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {
 	position: relative;
 	width: 1040px;
 	max-width: 100%;
-	height: 70px;
+	height: 50px;
 	margin: 0 auto
 }
 
